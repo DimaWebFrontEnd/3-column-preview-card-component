@@ -11,6 +11,7 @@ body img {
 }
 
 body {
+   background-color: var(--TRANSPARENT-WHITE);
    color: var(--TRANSPARENT-WHITE);
    font-size: 15px;
    min-width: 375px;
