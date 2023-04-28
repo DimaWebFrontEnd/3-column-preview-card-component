@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body img {
+   display: block;
+}
+
+body {
+   color: var(--TRANSPARENT-WHITE);
+   font-size: 15px;
+   min-width: 375px;
+   max-width: 1440px;
+   height: 100vh;
+   display: grid;
+   place-content: center;
+}
+
+   /* || VARIABLES*/
+:root {
+   /* || COLORS */
+   --BRIGHT-ORANGE: hsl(31, 77%, 52%);
+   --DARK-CYAN: hsl(184, 100%, 22%);
+   --VERY-DARK-CYAN: hsl(179, 100%, 13%);
+
+   --TRANSPARENT-WHITE: hsla(0, 0%, 100%, 0.75);
+   --VERY-LIGHT-GREY: hsl(0, 0%, 95%);
+
+   /* FONTS */
+   --LEXEND-DECA-400: 'Lexend Deca', sans-serif;
+   --BIG-SHOULDERS-700: 'Big Shoulders Display', cursive;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+main div:first-child {
+   background-color: var(--BRIGHT-ORANGE);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   padding: 50px 66px 50px 50px;
+}
+main div:nth-child(2) {
+   background-color: var(--DARK-CYAN);
+   padding: 50px;
+}
+main div:nth-child(3){
+   background-color: var(--VERY-DARK-CYAN);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   padding: 50px;
+}
+
+.box {
+   width: 310px;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+}
+
+h1 {
+   text-transform: uppercase;
+   font-family: var(--BIG-SHOULDERS-700);
+   font-size: 2.5rem;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   color: #fff;
+}
+
+p {
+   font-family: var(--LEXEND-DECA-400);
+   flex: 1 1 auto;
+   line-height: 1.5;
+}
+
+.main__btn {
+   border-radius: 40px;
+   border: none;
+   height: 50px;
+   width: 146px;
+   font-family: var(--LEXEND-DECA-400);
+   font-size: 0.9rem;
+}
+
+.clr1 { color: var(--BRIGHT-ORANGE);}
+.clr2 { color: var(--DARK-CYAN);}
+.clr3 { color: var(--VERY-DARK-CYAN);}
+
+.main__btn:hover {
+   background-color: transparent;
+   border: 2px solid white;
+   color: var(--TRANSPARENT-WHITE);
+}
+
+@media screen and (max-width: 940px) {
+   body {
+      height: 100%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+   }
+
+   main {
+      flex-direction: column;
+   }
+
+   main div:first-child {
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+   }
+
+   main div:nth-child(3) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+   }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
